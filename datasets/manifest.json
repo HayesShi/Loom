@@ -1,0 +1,4701 @@
+{
+  "version": 1,
+  "repository": "HayesShi/Loom",
+  "release_tag": "datasets-v1",
+  "packages": [
+    {
+      "key": "node-benchmarks",
+      "title": "14 node benchmarks and original Planetoid files",
+      "format": "tar.gz",
+      "content_kind": "Complete graphs and fixed masks in the experiment NPZ format, plus upstream Planetoid raw files",
+      "sources": [
+        "https://github.com/kimiyoung/planetoid",
+        "https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html",
+        "https://github.com/yandex-research/heterophilous-graphs",
+        "https://ogb.stanford.edu/docs/nodeprop/"
+      ],
+      "assets": [
+        {
+          "name": "loom-node-benchmarks.tar.gz",
+          "bytes": 215421945,
+          "sha256": "286187b10e690262c06f32cdadbed3ca47ff5a65a31c9cfa489daa22d1ead0ae"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.x",
+          "bytes": 22119
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.tx",
+          "bytes": 148025
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.allx",
+          "bytes": 257305
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.y",
+          "bytes": 4054
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.ty",
+          "bytes": 28135
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.ally",
+          "bytes": 47959
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.graph",
+          "bytes": 59847
+        },
+        {
+          "path": "data/planetoid/Cora/raw/ind.cora.test.index",
+          "bytes": 5000
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.x",
+          "bytes": 31087
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.tx",
+          "bytes": 260321
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.allx",
+          "bytes": 595021
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.y",
+          "bytes": 3014
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.ty",
+          "bytes": 24135
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.ally",
+          "bytes": 55623
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.graph",
+          "bytes": 61987
+        },
+        {
+          "path": "data/planetoid/CiteSeer/raw/ind.citeseer.test.index",
+          "bytes": 5000
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.x",
+          "bytes": 23172
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.tx",
+          "bytes": 405505
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.allx",
+          "bytes": 7578385
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.y",
+          "bytes": 854
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.ty",
+          "bytes": 12135
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.ally",
+          "bytes": 224739
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.graph",
+          "bytes": 471808
+        },
+        {
+          "path": "data/planetoid/PubMed/raw/ind.pubmed.test.index",
+          "bytes": 6000
+        },
+        {
+          "path": "data/node_benchmarks/cora/raw/cora.npz",
+          "bytes": 159918
+        },
+        {
+          "path": "data/node_benchmarks/citeseer/raw/citeseer.npz",
+          "bytes": 337902
+        },
+        {
+          "path": "data/node_benchmarks/pubmed/raw/pubmed.npz",
+          "bytes": 5494256
+        },
+        {
+          "path": "data/node_benchmarks/dblp/raw/dblp.npz",
+          "bytes": 2892746
+        },
+        {
+          "path": "data/node_benchmarks/wikics/raw/wikics.npz",
+          "bytes": 13957081
+        },
+        {
+          "path": "data/node_benchmarks/ogbn_arxiv/raw/ogbn_arxiv.npz",
+          "bytes": 82251380
+        },
+        {
+          "path": "data/node_benchmarks/coauthor_cs/raw/coauthor_cs.npz",
+          "bytes": 3402336
+        },
+        {
+          "path": "data/node_benchmarks/coauthor_physics/raw/coauthor_physics.npz",
+          "bytes": 5446477
+        },
+        {
+          "path": "data/node_benchmarks/roman_empire/raw/roman_empire.npz",
+          "bytes": 20401489
+        },
+        {
+          "path": "data/node_benchmarks/amazon_ratings/raw/amazon_ratings.npz",
+          "bytes": 27744018
+        },
+        {
+          "path": "data/node_benchmarks/chameleon_filtered/raw/chameleon_filtered.npz",
+          "bytes": 58924
+        },
+        {
+          "path": "data/node_benchmarks/minesweeper/raw/minesweeper.npz",
+          "bytes": 135045
+        },
+        {
+          "path": "data/node_benchmarks/tolokers/raw/tolokers.npz",
+          "bytes": 1329769
+        },
+        {
+          "path": "data/node_benchmarks/questions/raw/questions.npz",
+          "bytes": 47369919
+        }
+      ]
+    },
+    {
+      "key": "graphland",
+      "title": "GraphLand six prediction tasks and Roads-L scaling graph",
+      "format": "tar.gz",
+      "content_kind": "Upstream CSV data, targets, metadata and supplied splits",
+      "sources": [
+        "https://github.com/yandex-research/graphland"
+      ],
+      "assets": [
+        {
+          "name": "loom-graphland.tar.gz",
+          "bytes": 117559824,
+          "sha256": "194e02459ccd3c67336899216e6fa6e2411f590edac9cf5170e715148277d3ce"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/city-roads-M/edgelist.csv",
+          "bytes": 1534919
+        },
+        {
+          "path": "data/city-roads-M/features.csv",
+          "bytes": 7087477
+        },
+        {
+          "path": "data/city-roads-M/info.yaml",
+          "bytes": 745
+        },
+        {
+          "path": "data/city-roads-M/split_masks_RH.csv",
+          "bytes": 1301592
+        },
+        {
+          "path": "data/city-roads-M/split_masks_RL.csv",
+          "bytes": 1301592
+        },
+        {
+          "path": "data/city-roads-M/targets.csv",
+          "bytes": 1008454
+        },
+        {
+          "path": "data/tolokers-2/edgelist.csv",
+          "bytes": 10511724
+        },
+        {
+          "path": "data/tolokers-2/features.csv",
+          "bytes": 1097189
+        },
+        {
+          "path": "data/tolokers-2/info.yaml",
+          "bytes": 789
+        },
+        {
+          "path": "data/tolokers-2/split_masks_RH.csv",
+          "bytes": 259347
+        },
+        {
+          "path": "data/tolokers-2/split_masks_RL.csv",
+          "bytes": 259347
+        },
+        {
+          "path": "data/tolokers-2/split_masks_TH.csv",
+          "bytes": 259347
+        },
+        {
+          "path": "data/tolokers-2/targets.csv",
+          "bytes": 82973
+        },
+        {
+          "path": "data/artnet-exp/edgelist.csv",
+          "bytes": 5909062
+        },
+        {
+          "path": "data/artnet-exp/features.csv",
+          "bytes": 36459317
+        },
+        {
+          "path": "data/artnet-exp/info.yaml",
+          "bytes": 2069
+        },
+        {
+          "path": "data/artnet-exp/split_masks_RH.csv",
+          "bytes": 1148228
+        },
+        {
+          "path": "data/artnet-exp/split_masks_RL.csv",
+          "bytes": 1148228
+        },
+        {
+          "path": "data/artnet-exp/split_masks_TH.csv",
+          "bytes": 1148228
+        },
+        {
+          "path": "data/artnet-exp/targets.csv",
+          "bytes": 392155
+        },
+        {
+          "path": "data/artnet-views/edgelist.csv",
+          "bytes": 5909062
+        },
+        {
+          "path": "data/artnet-views/features.csv",
+          "bytes": 24826607
+        },
+        {
+          "path": "data/artnet-views/info.yaml",
+          "bytes": 1599
+        },
+        {
+          "path": "data/artnet-views/split_masks_RH.csv",
+          "bytes": 1148228
+        },
+        {
+          "path": "data/artnet-views/split_masks_RL.csv",
+          "bytes": 1148228
+        },
+        {
+          "path": "data/artnet-views/split_masks_TH.csv",
+          "bytes": 1148228
+        },
+        {
+          "path": "data/artnet-views/targets.csv",
+          "bytes": 1201258
+        },
+        {
+          "path": "data/city-reviews/edgelist.csv",
+          "bytes": 29122434
+        },
+        {
+          "path": "data/city-reviews/features.csv",
+          "bytes": 24120618
+        },
+        {
+          "path": "data/city-reviews/info.yaml",
+          "bytes": 1153
+        },
+        {
+          "path": "data/city-reviews/split_masks_RH.csv",
+          "bytes": 3460137
+        },
+        {
+          "path": "data/city-reviews/split_masks_RL.csv",
+          "bytes": 3460137
+        },
+        {
+          "path": "data/city-reviews/targets.csv",
+          "bytes": 1218198
+        },
+        {
+          "path": "data/twitch-views/edgelist.csv",
+          "bytes": 172307874
+        },
+        {
+          "path": "data/twitch-views/features.csv",
+          "bytes": 2418483
+        },
+        {
+          "path": "data/twitch-views/info.yaml",
+          "bytes": 316
+        },
+        {
+          "path": "data/twitch-views/split_masks_RH.csv",
+          "bytes": 3923649
+        },
+        {
+          "path": "data/twitch-views/split_masks_RL.csv",
+          "bytes": 3923649
+        },
+        {
+          "path": "data/twitch-views/split_masks_TH.csv",
+          "bytes": 3923649
+        },
+        {
+          "path": "data/twitch-views/targets.csv",
+          "bytes": 2706795
+        },
+        {
+          "path": "data/city-roads-L/edgelist.csv",
+          "bytes": 3456450
+        },
+        {
+          "path": "data/city-roads-L/features.csv",
+          "bytes": 14877252
+        },
+        {
+          "path": "data/city-roads-L/info.yaml",
+          "bytes": 745
+        },
+        {
+          "path": "data/city-roads-L/split_masks_RH.csv",
+          "bytes": 3303081
+        },
+        {
+          "path": "data/city-roads-L/split_masks_RL.csv",
+          "bytes": 3303081
+        },
+        {
+          "path": "data/city-roads-L/targets.csv",
+          "bytes": 3151062
+        }
+      ]
+    },
+    {
+      "key": "paris",
+      "title": "City-Networks Paris",
+      "format": "tar.gz",
+      "content_kind": "Upstream graph features, targets, coordinates and fixed masks",
+      "sources": [
+        "https://pytorch-geometric.readthedocs.io/en/latest/generated/torch_geometric.datasets.CityNetwork.html"
+      ],
+      "assets": [
+        {
+          "name": "loom-paris.tar.gz",
+          "bytes": 14076460,
+          "sha256": "3467ac84ef78e36332f04c2c56afe376a178d79fe6b7e804f86726ef12d9a515"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/city_networks/paris/raw/paris/10-chunk_16-hop_node_labels.pt",
+          "bytes": 914368
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/10-chunk_32-hop_node_labels.pt",
+          "bytes": 914368
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/16-hop_eccentricities.pt",
+          "bytes": 457762
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/32-hop_eccentricities.pt",
+          "bytes": 457762
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/edge_features.pt",
+          "bytes": 36503354
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/edge_indices.pt",
+          "bytes": 5841525
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/node_features.pt",
+          "bytes": 5479290
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/node_features_augmented.pt",
+          "bytes": 16892076
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/paris_visual_map.jpg",
+          "bytes": 415468
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/test_mask.pt",
+          "bytes": 115302
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/train_mask.pt",
+          "bytes": 115307
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris/valid_mask.pt",
+          "bytes": 115307
+        },
+        {
+          "path": "data/city_networks/paris/raw/paris.tar.gz",
+          "bytes": 6778857
+        }
+      ]
+    },
+    {
+      "key": "lrim",
+      "title": "LRIM four 10,000-graph variants",
+      "format": "tar.gz",
+      "content_kind": "Upstream raw graph lists",
+      "sources": [
+        "https://huggingface.co/datasets/jmathys/lrim_graph_benchmark"
+      ],
+      "assets": [
+        {
+          "name": "loom-lrim.tar.gz",
+          "bytes": 214665550,
+          "sha256": "36d8e3d95fddc71dfbae68722150d5ff0f2ab23327fd6e7d2f340a1bfc83beb3"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/lrim/lrim_16_0.6_10k/raw/lrim_16_0.6_10k.pt",
+          "bytes": 36979559
+        },
+        {
+          "path": "data/lrim/lrim_16_1.5_10k/raw/lrim_16_1.5_10k.pt",
+          "bytes": 36979559
+        },
+        {
+          "path": "data/lrim/lrim_32_0.6_10k/raw/lrim_32_0.6_10k.pt",
+          "bytes": 129170279
+        },
+        {
+          "path": "data/lrim/lrim_32_1.5_10k/raw/lrim_32_1.5_10k.pt",
+          "bytes": 129170279
+        }
+      ]
+    },
+    {
+      "key": "echo-sssp",
+      "title": "ECHO-SSSP six topology families",
+      "format": "tar.gz",
+      "content_kind": "Upstream raw train/validation/test graph lists",
+      "sources": [
+        "https://huggingface.co/datasets/lucamiglior/echo-benchmark"
+      ],
+      "assets": [
+        {
+          "name": "loom-echo-sssp.tar.gz",
+          "bytes": 14779484,
+          "sha256": "16104833e603b6dfbcd925bc1e914ca8cc3e802e3a54b87a7731bc095f541b01"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/echo_benchmark/official/sssp/train/raw/train_data.pt",
+          "bytes": 39441734
+        },
+        {
+          "path": "data/echo_benchmark/official/sssp/val/raw/val_data.pt",
+          "bytes": 15217230
+        },
+        {
+          "path": "data/echo_benchmark/official/sssp/test/raw/test_data.pt",
+          "bytes": 15202466
+        }
+      ]
+    },
+    {
+      "key": "2dele",
+      "title": "2Dele",
+      "format": "tar.gz",
+      "content_kind": "Upstream released data partitions",
+      "sources": [
+        "https://github.com/Supradax/Higher-Order-Differential-Topology-aware-GNN"
+      ],
+      "assets": [
+        {
+          "name": "loom-2dele.tar.gz",
+          "bytes": 2952945,
+          "sha256": "b6e813b3b7c3c9538aeb6002822581cd2f97c93c26550510d4f5163b74f578da"
+        }
+      ],
+      "files": [
+        {
+          "path": "external/Higher-Order-Differential-Topology-aware-GNN/data/2Dele/test_set2D.pth",
+          "bytes": 1991911
+        },
+        {
+          "path": "external/Higher-Order-Differential-Topology-aware-GNN/data/2Dele/train_set2D.pth",
+          "bytes": 1992757
+        },
+        {
+          "path": "external/Higher-Order-Differential-Topology-aware-GNN/data/2Dele/val_set2D.pth",
+          "bytes": 1991257
+        }
+      ]
+    },
+    {
+      "key": "hodge",
+      "title": "Hodge 3,000 magnetostatic samples",
+      "format": "tar.gz",
+      "content_kind": "Complete dataset generated with upstream solver, CPU seed 42; saved fixed split",
+      "sources": [
+        "https://github.com/ContinuumCoder/Hodge-Spectral-Duality"
+      ],
+      "assets": [
+        {
+          "name": "loom-hodge.tar.gz",
+          "bytes": 135649178,
+          "sha256": "ea8c88be34a9213142e13844b4afd9704012e8308032c299b4de0660dc902712"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/hodge_magnetostatics/official_cpu_seed42_3000/flux_field_dataset.pkl",
+          "bytes": 145472885
+        },
+        {
+          "path": "data/hodge_magnetostatics/official_cpu_seed42_3000/split_indices_public_code_seed42.npz",
+          "bytes": 7756
+        },
+        {
+          "path": "data/hodge_magnetostatics/official_cpu_seed42_3000/provenance.json",
+          "bytes": 1097
+        }
+      ]
+    },
+    {
+      "key": "laplace",
+      "title": "Laplace2d training, validation and three transfer domains",
+      "format": "tar.gz",
+      "content_kind": "Upstream scalar-field samples and reference meshes",
+      "sources": [
+        "https://huggingface.co/datasets/questionstorer/sni"
+      ],
+      "assets": [
+        {
+          "name": "loom-laplace.tar.gz",
+          "bytes": 23608847,
+          "sha256": "22a7a32d3ae78c6366bdff9a24de13b72970afc39de512c79e1c61995bf5206a"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/sni_laplace/laplace2d_bosch_100_test.pkl",
+          "bytes": 1968773
+        },
+        {
+          "path": "data/sni_laplace/laplace2d_holes_100_test.pkl",
+          "bytes": 2972818
+        },
+        {
+          "path": "data/sni_laplace/laplace2d_schwarz_100_test.pkl",
+          "bytes": 2067946
+        },
+        {
+          "path": "data/sni_laplace/laplace2d_simple_20000_train.pkl",
+          "bytes": 70310089
+        },
+        {
+          "path": "data/sni_laplace/laplace2d_simple_2500_test.pkl",
+          "bytes": 8637266
+        },
+        {
+          "path": "data/sni_laplace/mesh/A-schwarz.msh",
+          "bytes": 60089
+        },
+        {
+          "path": "data/sni_laplace/mesh/B-holes.msh",
+          "bytes": 83372
+        },
+        {
+          "path": "data/sni_laplace/mesh/C-bosch.msh",
+          "bytes": 44693
+        }
+      ]
+    },
+    {
+      "key": "plate-prepared",
+      "title": "Plate 1,000 prepared static graphs",
+      "format": "tar.gz",
+      "content_kind": "Derived experiment-ready graphs; original trajectories are supplied separately",
+      "sources": [
+        "https://zenodo.org/records/18480131",
+        "https://github.com/thobotics/neural_pde_matching"
+      ],
+      "assets": [
+        {
+          "name": "loom-plate-prepared.tar.gz",
+          "bytes": 40152913,
+          "sha256": "5f3820a71771b805a8a8e5b86d0fc10d2ec977ac93c4f571422779607131e1e0"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim900.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim901.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim902.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim903.pt",
+          "bytes": 320274
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim904.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim905.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim906.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim907.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim908.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim909.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim910.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim911.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim912.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim913.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim914.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim915.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim916.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim917.pt",
+          "bytes": 323346
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim918.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim919.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim920.pt",
+          "bytes": 319250
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim921.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim922.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim923.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim924.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim925.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim926.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim927.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim928.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim929.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim930.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim931.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim932.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim933.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim934.pt",
+          "bytes": 319250
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim935.pt",
+          "bytes": 319634
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim936.pt",
+          "bytes": 323474
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim937.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim938.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim939.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim940.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim941.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim942.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim943.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim944.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim945.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim946.pt",
+          "bytes": 319250
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim947.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim948.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim949.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim950.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim951.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim952.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim953.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim954.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim955.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim956.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim957.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim958.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim959.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim960.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim961.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim962.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim963.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim964.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim965.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim966.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim967.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim968.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim969.pt",
+          "bytes": 325522
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim970.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim971.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim972.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim973.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim974.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim975.pt",
+          "bytes": 319250
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim976.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim977.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim978.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim979.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim980.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim981.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim982.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim983.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim984.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim985.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim986.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim987.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim988.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim989.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim990.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim991.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim992.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim993.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim994.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim995.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim996.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim997.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim998.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/test/Sim999.pt",
+          "bytes": 321042
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim000.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim001.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim002.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim003.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim004.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim005.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim006.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim007.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim008.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim009.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim010.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim011.pt",
+          "bytes": 323730
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim012.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim013.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim014.pt",
+          "bytes": 320786
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim015.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim016.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim017.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim018.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim019.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim020.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim021.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim022.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim023.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim024.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim025.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim026.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim027.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim028.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim029.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim030.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim031.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim032.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim033.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim034.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim035.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim036.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim037.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim038.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim039.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim040.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim041.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim042.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim043.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim044.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim045.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim046.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim047.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim048.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim049.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim050.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim051.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim052.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim053.pt",
+          "bytes": 323346
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim054.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim055.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim056.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim057.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim058.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim059.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim060.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim061.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim062.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim063.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim064.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim065.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim066.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim067.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim068.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim069.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim070.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim071.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim072.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim073.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim074.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim075.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim076.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim077.pt",
+          "bytes": 319826
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim078.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim079.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim080.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim081.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim082.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim083.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim084.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim085.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim086.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim087.pt",
+          "bytes": 325074
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim088.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim089.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim090.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim091.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim092.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim093.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim094.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim095.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim096.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim097.pt",
+          "bytes": 323282
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim098.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim099.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim100.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim101.pt",
+          "bytes": 320274
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim102.pt",
+          "bytes": 319634
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim103.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim104.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim105.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim106.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim107.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim108.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim109.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim110.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim111.pt",
+          "bytes": 319634
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim112.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim113.pt",
+          "bytes": 321042
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim114.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim115.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim116.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim117.pt",
+          "bytes": 321682
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim118.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim119.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim120.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim121.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim122.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim123.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim124.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim125.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim126.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim127.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim128.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim129.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim130.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim131.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim132.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim133.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim134.pt",
+          "bytes": 325074
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim135.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim136.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim137.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim138.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim139.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim140.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim141.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim142.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim143.pt",
+          "bytes": 319250
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim144.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim145.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim146.pt",
+          "bytes": 324626
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim147.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim148.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim149.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim150.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim151.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim152.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim153.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim154.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim155.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim156.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim157.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim158.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim159.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim160.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim161.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim162.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim163.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim164.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim165.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim166.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim167.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim168.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim169.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim170.pt",
+          "bytes": 321682
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim171.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim172.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim173.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim174.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim175.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim176.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim177.pt",
+          "bytes": 319634
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim178.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim179.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim180.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim181.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim182.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim183.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim184.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim185.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim186.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim187.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim188.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim189.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim190.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim191.pt",
+          "bytes": 323282
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim192.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim193.pt",
+          "bytes": 323346
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim194.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim195.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim196.pt",
+          "bytes": 322578
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim197.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim198.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim199.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim200.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim201.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim202.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim203.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim204.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim205.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim206.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim207.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim208.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim209.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim210.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim211.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim212.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim213.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim214.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim215.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim216.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim217.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim218.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim219.pt",
+          "bytes": 319634
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim220.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim221.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim222.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim223.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim224.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim225.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim226.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim227.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim228.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim229.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim230.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim231.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim232.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim233.pt",
+          "bytes": 320786
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim234.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim235.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim236.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim237.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim238.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim239.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim240.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim241.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim242.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim243.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim244.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim245.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim246.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim247.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim248.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim249.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim250.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim251.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim252.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim253.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim254.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim255.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim256.pt",
+          "bytes": 319762
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim257.pt",
+          "bytes": 322578
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim258.pt",
+          "bytes": 325266
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim259.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim260.pt",
+          "bytes": 320594
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim261.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim262.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim263.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim264.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim265.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim266.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim267.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim268.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim269.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim270.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim271.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim272.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim273.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim274.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim275.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim276.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim277.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim278.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim279.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim280.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim281.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim282.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim283.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim284.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim285.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim286.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim287.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim288.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim289.pt",
+          "bytes": 320786
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim290.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim291.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim292.pt",
+          "bytes": 324306
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim293.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim294.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim295.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim296.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim297.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim298.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim299.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim300.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim301.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim302.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim303.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim304.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim305.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim306.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim307.pt",
+          "bytes": 324306
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim308.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim309.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim310.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim311.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim312.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim313.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim314.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim315.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim316.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim317.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim318.pt",
+          "bytes": 319762
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim319.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim320.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim321.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim322.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim323.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim324.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim325.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim326.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim327.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim328.pt",
+          "bytes": 324882
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim329.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim330.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim331.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim332.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim333.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim334.pt",
+          "bytes": 324882
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim335.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim336.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim337.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim338.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim339.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim340.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim341.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim342.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim343.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim344.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim345.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim346.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim347.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim348.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim349.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim350.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim351.pt",
+          "bytes": 321810
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim352.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim353.pt",
+          "bytes": 319762
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim354.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim355.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim356.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim357.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim358.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim359.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim360.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim361.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim362.pt",
+          "bytes": 321938
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim363.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim364.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim365.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim366.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim367.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim368.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim369.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim370.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim371.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim372.pt",
+          "bytes": 322578
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim373.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim374.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim375.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim376.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim377.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim378.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim379.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim380.pt",
+          "bytes": 321874
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim381.pt",
+          "bytes": 324562
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim382.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim383.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim384.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim385.pt",
+          "bytes": 321810
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim386.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim387.pt",
+          "bytes": 321874
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim388.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim389.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim390.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim391.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim392.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim393.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim394.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim395.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim396.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim397.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim398.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim399.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim400.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim401.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim402.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim403.pt",
+          "bytes": 325266
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim404.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim405.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim406.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim407.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim408.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim409.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim410.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim411.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim412.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim413.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim414.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim415.pt",
+          "bytes": 321682
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim416.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim417.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim418.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim419.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim420.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim421.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim422.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim423.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim424.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim425.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim426.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim427.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim428.pt",
+          "bytes": 320786
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim429.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim430.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim431.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim432.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim433.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim434.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim435.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim436.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim437.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim438.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim439.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim440.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim441.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim442.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim443.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim444.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim445.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim446.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim447.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim448.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim449.pt",
+          "bytes": 319634
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim450.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim451.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim452.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim453.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim454.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim455.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim456.pt",
+          "bytes": 322578
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim457.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim458.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim459.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim460.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim461.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim462.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim463.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim464.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim465.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim466.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim467.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim468.pt",
+          "bytes": 325266
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim469.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim470.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim471.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim472.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim473.pt",
+          "bytes": 324882
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim474.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim475.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim476.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim477.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim478.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim479.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim480.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim481.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim482.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim483.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim484.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim485.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim486.pt",
+          "bytes": 323282
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim487.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim488.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim489.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim490.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim491.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim492.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim493.pt",
+          "bytes": 321810
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim494.pt",
+          "bytes": 320274
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim495.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim496.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim497.pt",
+          "bytes": 319250
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim498.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim499.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim500.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim501.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim502.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim503.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim504.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim505.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim506.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim507.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim508.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim509.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim510.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim511.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim512.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim513.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim514.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim515.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim516.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim517.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim518.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim519.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim520.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim521.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim522.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim523.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim524.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim525.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim526.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim527.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim528.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim529.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim530.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim531.pt",
+          "bytes": 323346
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim532.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim533.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim534.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim535.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim536.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim537.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim538.pt",
+          "bytes": 321938
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim539.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim540.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim541.pt",
+          "bytes": 325266
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim542.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim543.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim544.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim545.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim546.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim547.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim548.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim549.pt",
+          "bytes": 321938
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim550.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim551.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim552.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim553.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim554.pt",
+          "bytes": 319378
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim555.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim556.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim557.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim558.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim559.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim560.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim561.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim562.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim563.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim564.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim565.pt",
+          "bytes": 321810
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim566.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim567.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim568.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim569.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim570.pt",
+          "bytes": 322962
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim571.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim572.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim573.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim574.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim575.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim576.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim577.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim578.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim579.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim580.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim581.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim582.pt",
+          "bytes": 319762
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim583.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim584.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim585.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim586.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim587.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim588.pt",
+          "bytes": 320594
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim589.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim590.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim591.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim592.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim593.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim594.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim595.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim596.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim597.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim598.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim599.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim600.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim601.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim602.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim603.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim604.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim605.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim606.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim607.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim608.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim609.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim610.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim611.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim612.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim613.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim614.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim615.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim616.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim617.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim618.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim619.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim620.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim621.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim622.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim623.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim624.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim625.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim626.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim627.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim628.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim629.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim630.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim631.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim632.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim633.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim634.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim635.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim636.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim637.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim638.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim639.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim640.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim641.pt",
+          "bytes": 324306
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim642.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim643.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim644.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim645.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim646.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim647.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim648.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim649.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim650.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim651.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim652.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim653.pt",
+          "bytes": 323794
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim654.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim655.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim656.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim657.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim658.pt",
+          "bytes": 321362
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim659.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim660.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim661.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim662.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim663.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim664.pt",
+          "bytes": 324882
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim665.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim666.pt",
+          "bytes": 324562
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim667.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim668.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim669.pt",
+          "bytes": 319762
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim670.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim671.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim672.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim673.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim674.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim675.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim676.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim677.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim678.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim679.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim680.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim681.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim682.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim683.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim684.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim685.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim686.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim687.pt",
+          "bytes": 323474
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim688.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim689.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim690.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim691.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim692.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim693.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim694.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim695.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim696.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim697.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim698.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim699.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim700.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim701.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim702.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim703.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim704.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim705.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim706.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim707.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim708.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim709.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim710.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim711.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim712.pt",
+          "bytes": 321618
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim713.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim714.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim715.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim716.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim717.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim718.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim719.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim720.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim721.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim722.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim723.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim724.pt",
+          "bytes": 321810
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim725.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim726.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim727.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim728.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim729.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim730.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim731.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim732.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim733.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim734.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim735.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim736.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim737.pt",
+          "bytes": 319762
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim738.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim739.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim740.pt",
+          "bytes": 321810
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim741.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim742.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim743.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim744.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim745.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim746.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim747.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim748.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim749.pt",
+          "bytes": 321298
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim750.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim751.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim752.pt",
+          "bytes": 321746
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim753.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim754.pt",
+          "bytes": 324498
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim755.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim756.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim757.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim758.pt",
+          "bytes": 324562
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim759.pt",
+          "bytes": 323218
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim760.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim761.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim762.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim763.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim764.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim765.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim766.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim767.pt",
+          "bytes": 322002
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim768.pt",
+          "bytes": 323282
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim769.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim770.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim771.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim772.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim773.pt",
+          "bytes": 324690
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim774.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim775.pt",
+          "bytes": 323154
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim776.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim777.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim778.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim779.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim780.pt",
+          "bytes": 324114
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim781.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim782.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim783.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim784.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim785.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim786.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim787.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim788.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim789.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim790.pt",
+          "bytes": 321170
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim791.pt",
+          "bytes": 322066
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim792.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim793.pt",
+          "bytes": 321618
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim794.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim795.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim796.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim797.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim798.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/train/Sim799.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim800.pt",
+          "bytes": 322130
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim801.pt",
+          "bytes": 323346
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim802.pt",
+          "bytes": 324946
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim803.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim804.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim805.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim806.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim807.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim808.pt",
+          "bytes": 320786
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim809.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim810.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim811.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim812.pt",
+          "bytes": 320274
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim813.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim814.pt",
+          "bytes": 324882
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim815.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim816.pt",
+          "bytes": 322642
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim817.pt",
+          "bytes": 322770
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim818.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim819.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim820.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim821.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim822.pt",
+          "bytes": 321554
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim823.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim824.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim825.pt",
+          "bytes": 320402
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim826.pt",
+          "bytes": 321938
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim827.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim828.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim829.pt",
+          "bytes": 323090
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim830.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim831.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim832.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim833.pt",
+          "bytes": 324562
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim834.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim835.pt",
+          "bytes": 324434
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim836.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim837.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim838.pt",
+          "bytes": 325010
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim839.pt",
+          "bytes": 318802
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim840.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim841.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim842.pt",
+          "bytes": 319506
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim843.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim844.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim845.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim846.pt",
+          "bytes": 319570
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim847.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim848.pt",
+          "bytes": 323666
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim849.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim850.pt",
+          "bytes": 320530
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim851.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim852.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim853.pt",
+          "bytes": 323986
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim854.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim855.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim856.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim857.pt",
+          "bytes": 323858
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim858.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim859.pt",
+          "bytes": 319442
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim860.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim861.pt",
+          "bytes": 323282
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim862.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim863.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim864.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim865.pt",
+          "bytes": 322194
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim866.pt",
+          "bytes": 325074
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim867.pt",
+          "bytes": 322898
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim868.pt",
+          "bytes": 324818
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim869.pt",
+          "bytes": 319698
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim870.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim871.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim872.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim873.pt",
+          "bytes": 324754
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim874.pt",
+          "bytes": 320338
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim875.pt",
+          "bytes": 323922
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim876.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim877.pt",
+          "bytes": 323346
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim878.pt",
+          "bytes": 324050
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim879.pt",
+          "bytes": 322386
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim880.pt",
+          "bytes": 319186
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim881.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim882.pt",
+          "bytes": 318674
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim883.pt",
+          "bytes": 320018
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim884.pt",
+          "bytes": 319122
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim885.pt",
+          "bytes": 323026
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim886.pt",
+          "bytes": 319954
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim887.pt",
+          "bytes": 320914
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim888.pt",
+          "bytes": 324178
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim889.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim890.pt",
+          "bytes": 321234
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim891.pt",
+          "bytes": 320210
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim892.pt",
+          "bytes": 322706
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim893.pt",
+          "bytes": 323538
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim894.pt",
+          "bytes": 322322
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim895.pt",
+          "bytes": 320978
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim896.pt",
+          "bytes": 324370
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim897.pt",
+          "bytes": 321426
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim898.pt",
+          "bytes": 321490
+        },
+        {
+          "path": "data/plate_deformation/processed_static/val/Sim899.pt",
+          "bytes": 323602
+        },
+        {
+          "path": "data/plate_deformation/processed_static/metadata.json",
+          "bytes": 822708
+        }
+      ]
+    },
+    {
+      "key": "plate-original",
+      "title": "Plate original complete trajectory archive",
+      "format": "split-file",
+      "content_kind": "Byte-for-byte original upstream ZIP",
+      "sources": [
+        "https://zenodo.org/records/18480131"
+      ],
+      "assets": [
+        {
+          "name": "loom-plate-original.zip.part001",
+          "bytes": 536870912,
+          "sha256": "7f89fb2439ea77ca4520f22e54f629060fc20bb6a3b44b78b766641a6241b349"
+        },
+        {
+          "name": "loom-plate-original.zip.part002",
+          "bytes": 536870912,
+          "sha256": "538229bd559a5deeca82d355d00e0c2f4d3e913b1ec84f3e51a0d7462859449f"
+        },
+        {
+          "name": "loom-plate-original.zip.part003",
+          "bytes": 536870912,
+          "sha256": "3edf96683499ffe834983782e0dc13ef08dea37ecede96a7fd57bb400765ce37"
+        },
+        {
+          "name": "loom-plate-original.zip.part004",
+          "bytes": 536870912,
+          "sha256": "39894a5c936f8105d9c4056442c90c272c033912eb7434edda9f7c375efddfb1"
+        },
+        {
+          "name": "loom-plate-original.zip.part005",
+          "bytes": 536870912,
+          "sha256": "d6ef5920949af1ad79517d968606772977841a7c674a22b144f7a2f30c7e5e76"
+        },
+        {
+          "name": "loom-plate-original.zip.part006",
+          "bytes": 283520443,
+          "sha256": "17bf9c61af4729356ef1c64f2caceccbf92e45435600fb9c3458d3b32a5fbcbc"
+        }
+      ],
+      "output": "data/plate_deformation/plate_deformation.zip",
+      "bytes": 2967875003,
+      "sha256": "fc373ad65dac6e824662a3daaa373c27ea88714606d4d8acac64fdc6a3cd1b5c",
+      "files": [
+        {
+          "path": "data/plate_deformation/plate_deformation.zip",
+          "bytes": 2967875003
+        }
+      ]
+    }
+  ],
+  "scope": "All input datasets used by the Loom manuscript prediction tasks, plus Roads-L scaling data. Synthetic scaling graphs are generated by scripts/benchmark_scaling.py.",
+  "excludes": "Model checkpoints, predictions, compiler caches, unrelated historical experiments and duplicate processed data."
+}
