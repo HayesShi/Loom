@@ -1,0 +1,25 @@
+# Third-party sources
+
+Dependencies and external datasets retain their upstream licenses and citation requirements. External repositories are loaded locally rather than vendored here.
+
+| Project | Source | Local directory |
+| --- | --- | --- |
+| GraphLand | https://github.com/yandex-research/graphland | `external/GraphLand` |
+| LRIM | https://github.com/iJorl/lrim_graph_benchmark | `external/LRIM` |
+| ECHO | https://github.com/Graph-ECHO-Benchmark/ECHO | `external/ECHO` |
+| Higher-Order Differential Topology-aware GNN | https://github.com/Supradax/Higher-Order-Differential-Topology-aware-GNN | `external/Higher-Order-Differential-Topology-aware-GNN` |
+| Neural PDE Matching (Plate) | https://github.com/thobotics/neural_pde_matching | Data preparation reference |
+| SGFormer | https://github.com/qitianwu/SGFormer | `external/SGFormer` |
+| SNI | https://huggingface.co/datasets/questionstorer/sni | Laplace data source |
+
+For example:
+
+```bash
+git clone https://github.com/yandex-research/graphland external/GraphLand
+git clone https://github.com/iJorl/lrim_graph_benchmark external/LRIM
+git clone https://github.com/Graph-ECHO-Benchmark/ECHO external/ECHO
+git clone https://github.com/Supradax/Higher-Order-Differential-Topology-aware-GNN external/Higher-Order-Differential-Topology-aware-GNN
+git clone https://github.com/qitianwu/SGFormer external/SGFormer
+```
+
+The development workspace used LRIM commit `378423726035341a93cb0ae0137fe42a5cf2d538`, Higher-Order Differential Topology-aware GNN commit `cd12fa6d1d2cc10042494c2dbe1780fc3f026db3`, and Neural PDE Matching commit `328985ee30b4ecabb06463600f57ac7f67c420bc`. Cloning a source repository may not download its separately hosted datasets. Follow each project's instructions for data and dependencies.

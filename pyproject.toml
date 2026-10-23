@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loom-graph"
+version = "0.1.0"
+description = "Loom: graph topology compilation and adaptive rotary coupling"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.5",
+  "torch-geometric>=2.7",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "networkx>=3.0",
+  "numba>=0.59",
+  "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+data = ["meshio>=5", "PyYAML>=6", "pandas>=2", "ogb>=1.3.6", "psutil>=5"]
+plot = ["matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "scripts"]

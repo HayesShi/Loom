@@ -1,0 +1,48 @@
+# Loom
+
+Loom is a graph neural network that compiles graph topology into node placement on a fixed butterfly network. Its parallel, multiscale schedule exchanges information through an adaptive rotary coupling operator (ARCO), while retaining a separate state for each node.
+
+## Installation
+
+Use Python 3.10 or newer. Install a [PyTorch](https://pytorch.org/get-started/locally/) build appropriate for your hardware, then run:
+
+```bash
+git clone https://github.com/shz187060108/Loom.git
+cd Loom
+python -m pip install -e ".[test,data]"
+python examples/quickstart.py
+```
+
+The quickstart compiles a small graph and performs one optimization step on CPU. The implementation was checked with PyTorch 2.5.1 and PyG 2.7.0. Experiment training and timing through the campaign runner require an NVIDIA GPU and CUDA-enabled PyTorch. Custom CUDA kernels additionally require a compatible CuPy installation; they are optional for the ordinary PyTorch model.
+
+## Experiments
+
+Run commands from this directory. A single-task run is:
+
+```bash
+python scripts/run_loom_campaign.py --tasks cora --seed 0 --output results/cora_s0
+```
+
+The runner selects configurations and epochs on validation data and saves run records, checkpoints, and timing measurements. Use a different output directory for each seed. See [experiment instructions](docs/experiments.md) and [dataset setup](docs/datasets.md) before running the full campaign.
+
+## Code map
+
+| Location | Purpose |
+| --- | --- |
+| `src/gcm/loom.py` | Loom model, layout compilation, and rotary coupling |
+| `src/gcm/hamming_compiler.py` | Topology-aware placement optimization |
+| `src/gcm/loom_cuda.py` | Optional CUDA execution |
+| `scripts/run_loom_campaign.py` | Main Loom experiment entry point |
+| `scripts/loom_graph_campaign.py` | Graph-level and physical-field task integration |
+| `scripts/benchmark_scaling.py` | Inference scaling measurements |
+| `tests/` | Operator, compiler, adapter, and execution tests |
+
+The Python package retains the name `gcm` for compatibility with existing imports and checkpoints. Supporting modules and task adapters include controls used by the experiments; use `run_loom_campaign.py` to train Loom itself.
+
+## Tests
+
+```bash
+python -m pytest -q
+```
+
+CUDA-specific tests are skipped when their required hardware or dependencies are unavailable. Datasets, checkpoints, generated reports, and third-party repositories are not bundled. See [third-party sources](docs/third_party.md).
