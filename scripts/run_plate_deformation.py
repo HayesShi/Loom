@@ -313,7 +313,8 @@ class PlateDataset(Dataset):
                                     "gray_spaced" if self.layout ==
                                     "plate_gray_spaced_contact" else "gray"),
                 force_layout=("nearest" if self.layout == "plate_gray_nearest"
-                              else "contact"))
+                              else "contact"),
+                reuse_reference=self.layout in ("plate_gray_contact", "plate_gray_nearest"))
         # The official environment exposes PROPERTIES to the model; u0 is an
         # output offset, and edge_attr already has the official edge scaling.
         graph.x = graph.properties.clone().float()
@@ -370,7 +371,8 @@ def _load_data(root: Path, coordinate_input: bool = False,
                                         "gray_spaced" if layout ==
                                         "plate_gray_spaced_contact" else "gray"),
                     force_layout=("nearest" if layout == "plate_gray_nearest"
-                                  else "contact"))
+                                  else "contact"),
+                    reuse_reference=layout in ("plate_gray_contact", "plate_gray_nearest"))
             sizes.append(int(graph.num_nodes))
             cached_graphs.append(graph)
         dataset.cached_graphs = cached_graphs

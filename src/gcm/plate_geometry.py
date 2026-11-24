@@ -119,8 +119,23 @@ def _scaffold_component_wires(edge_bytes: bytes) -> np.ndarray:
     return mapping.numpy()
 
 
+@lru_cache(maxsize=1)
+def _gray_reference():
+    mesh_wires = np.asarray([_interleaved_gray(x, y)
+                             for x in range(GRID_SIDE) for y in range(GRID_SIDE)])
+    free_wires = np.setdiff1d(np.arange(WIRES, dtype=np.int64), mesh_wires, assume_unique=True)
+    xy = np.asarray([_wire_grid_coordinates(int(wire)) for wire in free_wires], dtype=np.float64)
+    return mesh_wires, free_wires, xy
+
+
+def compile_plate_reference(graph) -> torch.Tensor:
+    """Reuse the canonical Gray mesh and candidate wire coordinates across cases."""
+    return compile_plate_gray_contact(graph, reuse_reference=True)
+
+
 def compile_plate_gray_contact(graph, mesh_layout: str = "gray",
-                               force_layout: str = "contact") -> torch.Tensor:
+                               force_layout: str = "contact", *,
+                               reuse_reference: bool = False) -> torch.Tensor:
     """Compile input-only, injective node-to-wire IDs.
 
     Each mesh vertex receives a canonical Gray, spaced Gray, binary, or
@@ -169,8 +184,13 @@ def compile_plate_gray_contact(graph, mesh_layout: str = "gray",
         raise ValueError("Unknown Plate mesh layout")
     if force_layout not in ("contact", "nearest"):
         raise ValueError("Unknown Plate force layout")
+    if reuse_reference and mesh_layout != "gray":
+        raise ValueError("The reusable Plate reference requires the Gray mesh layout")
     mapping = np.full(len(node_type), -1, dtype=np.int64)
-    if mesh_layout == "gray":
+    if reuse_reference:
+        reference, free_wires, candidate_xy = _gray_reference()
+        mapping[mesh] = reference[flat_grid]
+    elif mesh_layout == "gray":
         mapping[mesh] = [_interleaved_gray(int(x), int(y)) for x, y in grid]
     elif mesh_layout == "gray_spaced":
         mapping[mesh] = [_interleaved_spaced_gray(int(x), int(y))
@@ -187,8 +207,9 @@ def compile_plate_gray_contact(graph, mesh_layout: str = "gray",
         scaffold_edges = np.unique(scaffold_edges.T, axis=0).T.copy()
         mapping[mesh] = _scaffold_component_wires(
             scaffold_edges.tobytes())[flat_grid]
-    free_wires = np.setdiff1d(np.arange(WIRES, dtype=np.int64), mapping[mesh],
-                              assume_unique=True)
+    if not reuse_reference:
+        free_wires = np.setdiff1d(np.arange(WIRES, dtype=np.int64), mapping[mesh],
+                                  assume_unique=True)
     if len(forces) > len(free_wires):
         raise ValueError("Too many force nodes for free plate wires")
 
@@ -219,10 +240,11 @@ def compile_plate_gray_contact(graph, mesh_layout: str = "gray",
         *pos[force].tolist(), *directions[force].tolist(),
         tuple(sorted(int(mapping[vertex]) for vertex in contact[force])),
     ))
-    wire_coordinates = (_binary_wire_grid_coordinates if mesh_layout == "binary"
-                        else _wire_grid_coordinates)
-    candidate_xy = np.asarray([wire_coordinates(int(wire))
-                               for wire in free_wires], dtype=np.float64)
+    if not reuse_reference:
+        wire_coordinates = (_binary_wire_grid_coordinates if mesh_layout == "binary"
+                            else _wire_grid_coordinates)
+        candidate_xy = np.asarray([wire_coordinates(int(wire))
+                                   for wire in free_wires], dtype=np.float64)
     cost = np.empty((len(forces), len(free_wires)), dtype=np.float64)
     for row, force in enumerate(ordered_forces):
         if mesh_layout == "gray_spaced":

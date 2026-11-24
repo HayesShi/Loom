@@ -2,12 +2,16 @@
 
 Loom is a graph neural network that compiles graph topology into node placement on a fixed butterfly network. Its parallel, multiscale schedule exchanges information through an adaptive rotary coupling operator (ARCO), while retaining a separate state for each node.
 
+The VLDB branch adds reusable reference layouts, a versioned inference session,
+and cost accounting for comparing retention with recomputation. See the
+[VLDB methods and usage](docs/vldb.md).
+
 ## Installation
 
 Use Python 3.10 or newer. Install a [PyTorch](https://pytorch.org/get-started/locally/) build appropriate for your hardware, then run:
 
 ```bash
-git clone https://github.com/HayesShi/Loom.git
+git clone --branch VLDB https://github.com/HayesShi/Loom.git
 cd Loom
 python -m pip install -e ".[test,data]"
 python examples/quickstart.py

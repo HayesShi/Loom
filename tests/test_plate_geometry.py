@@ -17,6 +17,7 @@ from gcm.plate_geometry import (WIRES, _binary_wire_grid_coordinates,
                                 _wire_grid_coordinates,
                                 compile_plate_binary_contact,
                                 compile_plate_gray_contact,
+                                compile_plate_reference,
                                 compile_plate_gray_spaced_contact,
                                 compile_plate_gray_distance_angle_scales)
 
@@ -72,6 +73,8 @@ def test_mesh_wires_are_stable_and_adjacent_grid_vertices_pair() -> None:
     other = _dummy_plate(7.)
     mapping = compile_plate_gray_contact(graph)
     other_mapping = compile_plate_gray_contact(other)
+    assert torch.equal(compile_plate_reference(graph), mapping)
+    assert torch.equal(compile_plate_reference(other), other_mapping)
     assert len(mapping) == graph.num_nodes
     assert mapping.unique().numel() == graph.num_nodes
     assert bool(((mapping >= 0) & (mapping < WIRES)).all())
